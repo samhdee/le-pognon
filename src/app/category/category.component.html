@@ -1,0 +1,7 @@
+<h2>Liste des catégories</h2>
+
+<ngb-accordion class="p-2" [closeOthers]="true">
+    <ngb-panel *ngFor="let category of categories">
+        <app-category-details [category]="category"></app-category-details>
+    </ngb-panel>
+</ngb-accordion>

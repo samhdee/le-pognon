@@ -1,0 +1,23 @@
+alau
+<div *ngIf="category">
+    <ng-template ngbPanelHeader>
+        yo
+        {{category.name}}
+
+        <button type="button" class="btn btn-primary btn-sm" (click)="onSelect()">
+            <fa-icon [icon]="faPen"></fa-icon>
+        </button>
+    </ng-template>
+
+    <ng-template ngbPanelContent>
+        <div *ngIf="edit">
+            <div class="input-group">
+                <span class="input-group-text">Nom</span>
+                <input id="name" class="form-control" [(ngModel)]="category.name" placeholder="Nom" />
+                <button type="button" class="btn btn-success" (click)="onSave()">
+                    <fa-icon [icon]="faCheck"></fa-icon>
+                </button>
+            </div>
+        </div>
+    </ng-template>
+</div>

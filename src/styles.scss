@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables";
+$body-bg: #2d2b29;
+$body-color: white;
+$accordion-button-active-bg: $gray-70;
+
+/* Importing Bootstrap SCSS file. */
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.input-group-text {
+    background-color: $gray-70;
+}
